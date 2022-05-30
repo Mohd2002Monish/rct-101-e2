@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Product from "./Product";
 
-const Products = () => {
+function Products() {
   // TODO: Remove below const and instead import them from chakra
-  const Flex = () => <div />;
-  const Grid = () => <div />;
+
+  // const Flex = styled.flex`
+  //   display: flex;
+  // `;
+  // const Grid = styled.grid`
+  //   display: grid;
+  //   grid-template-columns: repeat(1fr, 200px);
+  //   grid-template-row: repeat(1fr, 200px);
+  // `;
 
   return (
-    <Flex>
+    <div>
       {/*  AddProduct */}
-      <Grid>{/* List of Products */}</Grid>
+      <div style={{ border: "1px solid green", display: "flex" }}>
+        <Product />
+      </div>
       {/* Pagination */}
-    </Flex>
+    </div>
   );
-};
+}
 
 export default Products;
